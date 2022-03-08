@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="icon" href="/Imagenes/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/estilos/index.css">
+  </head>
+
+  <body class="body">
+    <form action="" name="formulario" class="formulario" method="get">
+      <h1 class="formulario__title">¿ Estas listo(a) para tener un Kumpas ?</h1>
+
+      <input type="text" name="Nombres" class="formulario__input" maxlength="30" placeholder="Nombres" />
+      <label for="" class="formulario__label"></label>
+
+      <input type="text" name="Apellidos" class="formulario__input" placeholder="Apellidos" />
+      <label for="" class="formulario__label"></label>
+
+      <input type="text" name="Correo" class="formulario__input" placeholder="Correo"  />
+      <label for="" class="formulario__label"></label>
+
+      <input type="text" name="Celular" class="formulario__input" placeholder="Celular"  />
+      <label for="" class="formulario__label"></label>
+
+      <input type="text" name="Mensaje" class="formulario__input" placeholder="Mensaje" />
+      <label for="" class="formulario__label"></label>
+
+      <div >
+      <input type="checkbox" id=switch name="Terminos"  onclick ="nuevapagina ('Terminos.html')"/> 
+    
+      <label for="switch" class="lbl"></label> 
+      <p class="switch_title">Términos y Condiciones</p> 
+
+      <input type="submit" name="button" class="formulario__submit" value="Enviar"/>
+      <section class="time-container">
+        <h1 class="time__title1">Fecha</h1>
+        <h1 class="time__title2">Hora</h1>
+        <div class="wrap">
+          <div class="widget">
+            <div class="fecha">
+              <p id="diaSemana" class="diaSemana"></p>
+              <p id="dia" class="dia"></p>
+              <p>de</p>
+              <p id="mes" class="mes"></p>
+              <p>del</p>
+              <p id="year" class="year"></p>
+            </div> 
+         
+             <div class="reloj">
+            <p id="horas" class="horas"></p>
+              <p id="dia" class="dia"></p>
+              <p>:</p>
+              <p id="minutos" class="minutos"></p>
+              <p>:</p>
+              <div class="caja-segundos">
+              <p id="ampm" class="ampm"></p>
+              <p id="segundos" class="segundos"></p>
+        </div>
+      </section>
+      <script src="/javascript/index.js"></script>
+      
+    </form>
+  </body>
+
+  <footer class="section">
+    <section class="redes" id="redes">
+            
+    <h3 class="section-final__title"> Encuéntranos en: </h3>
+    <nav class="section-final">
+        <a href="https://www.instagram.com/kumpas_oficial/" class="section-final__container">
+                <img src="/Imagenes/instagram.png" class="section-final__icon-image"  alt="Instagram">
+        </a>
+    
+          <a href="https://api.whatsapp.com/send?phone=51991537893&text=%C2%A1Hola%20Clarissa!%20Quisiera%20contactarme%20contigo" class="section-final__container">
+            <img src="/Imagenes/whatsapp.png" class="section-final__icon-image" alt="Whatsapp"> 
+        </a>
+    
+          <p >🌱Derechos reservados &copy;Kumpas 2022🌱</p>
+        </section>
+        </footer>
+</html>
